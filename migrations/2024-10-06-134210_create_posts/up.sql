@@ -1,4 +1,4 @@
-CREATE TABLE posts (
+CREATE TABLE IF NOT EXISTS posts (
     id SERIAL PRIMARY KEY,
     title VARCHAR NOT NULL,
     content TEXT NOT NULL,
