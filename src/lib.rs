@@ -1,5 +1,6 @@
 pub mod db;
 pub mod blog_config;
+pub mod posts;
 
 // Common templates
 pub mod templates {
