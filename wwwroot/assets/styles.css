@@ -322,10 +322,10 @@ footer {
   justify-content: space-between;
   background-color: #0088ff3d;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
   border-radius: 10px;
   user-select: none;
-  min-height: 200px;
+  min-height: 80px;
   padding: 1px 20px;
   margin: 10px 5px;
   cursor: pointer;
@@ -342,6 +342,7 @@ footer {
 .post-card a {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: inherit;
   width: 100%;

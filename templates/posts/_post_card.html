@@ -1,6 +1,6 @@
 <div class="post-card">
     <a href="/post/{{ post.slug }}">
         {{ post.title }}
-        <pre class="post-card__date">{{ post.created_at  }}</pre>
+        <pre class="post-card__date">{{ post.created_at|parse_and_format_date  }}</pre>
     </a>
 </div>
