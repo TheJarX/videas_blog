@@ -1,0 +1,17 @@
+[author]
+short_name = "Gerard"
+name = "Gerard Altamirano"
+email = "hello@itsgerard.com"
+picture_url = "https://avatars.githubusercontent.com/u/35399391"
+headline = "Developer with expertise in Full-Stack, games development, and bash automation (I code scripts because I'm lazy lol)"
+description = "I'm refreshing my website (including the blog), and you're lucky to see this new version (WIP). I'm planning to make the project open source since it has a couple of interesting things; need to finish some stuff first. Stay"
+
+[site]
+title = "Gerard Altamirano - Videas"
+description = "Developer with expertise in Full-Stack, games development, and bash automation (I code scripts because I'm lazy lol). Passionate about education."
+base_url = "https://itsgerard.com"
+# The path should be relative to the static folder that was declared in main.rs
+cover_path = "static/assets/cover.jpg"
+navbar_links = [
+    { name = "GitHub", url = "https://github.com/thejarx" },
+]
