@@ -1,3 +1,4 @@
+use actix_files as fs;
 use actix_web::{web, App, HttpServer, HttpResponse, Error};
 use diesel::prelude::*;
 use videas_blog::db::establish_connection;
@@ -15,6 +16,7 @@ async fn list_posts() -> Result<HttpResponse, Error> {
 async fn main() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
+            .service(fs::Files::new("/static", "./wwwroot"))
             .service(web::resource("/").route(web::get().to(list_posts)))
     })
         .bind(("0.0.0.0", 8080))?
