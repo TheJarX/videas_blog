@@ -1,0 +1,5 @@
+{% let author = crate::blog_config::CONFIG.author.name.clone()  %}
+<title>{{ post.title }} | {{ author }}</title>
+<meta name="author" content="{{ author }}">
+<meta name="keywords" content="{{ post.tags|join_options(", ") }}">
+<meta name="description" content="{{ post.description }}">

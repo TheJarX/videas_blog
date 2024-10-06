@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% include "head_base.html" %}
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="/static/assets/styles.css">
+</head>
+<body class="flex flex-col">
+<header>
+    <div class="header__left">
+        {% include "config/logo.html" %}
+    </div>
+    <div class="header__right">
+        {% include "config/header_links.html" %}
+    </div>
+</header>
+<main class="flex flex-col">
+    {% block content %}{% endblock %}
+</main>
+<footer>
+    {% include "config/footer.html" %}
+</footer>
+</body>
+</html>
+

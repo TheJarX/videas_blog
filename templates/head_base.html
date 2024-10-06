@@ -1,0 +1,24 @@
+{% let url = crate::blog_config::CONFIG.site.base_url.clone() %}
+{% let cover = crate::blog_config::CONFIG.site.cover_path.clone() %}
+{% let main_title = crate::blog_config::CONFIG.site.title.clone() %}
+{% let main_content_desc = crate::blog_config::CONFIG.site.description.clone() %}
+
+<!-- Primary Meta Tags -->
+<title>{{ main_title }}</title>
+<meta name="title" content="{{ main_title }}"/>
+<meta name="description" content="{{ main_content_desc }}"/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{ url }}"/>
+<meta property="og:title" content="{{ main_title }}"/>
+<meta property="og:description" content="{{ main_content_desc }}"/>
+<meta property="og:image" content="{{ url }}{{ cover }}"/>
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:url" content="{{ url }}"/>
+<meta property="twitter:title" content="{{ main_title }}"/>
+<meta property="twitter:description" content="{{ main_content_desc }}"/>
+<meta property="twitter:image" content="{{ url }}{{ cover }}"/>
+<!-- Meta Tags Generated with https://metatags.io (in case you want to generate yours manually -->

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block head%}
+{% include "_post_head.html" %}
+{% endblock %}
+{% block content %}
+
+<div class="post-container__content">
+    <span class="post-container__content__time-estimate" data-number-from="https://thereadtime.com/ ">
+        ~{{ post.content| wordcount / 238 }} min read
+    </span>
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+</div>
+{% endblock %}

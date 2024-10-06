@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="flex index-container">
+    <div class="index-container__left">
+        <div>
+            {% include "config/picture.html" %}
+        </div>
+        {% include "config/bio.html" %}
+    </div>
+    <div class="index-container__right">
+        {% for post in posts %}
+        {% include "posts/_post_card.html" %}
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
