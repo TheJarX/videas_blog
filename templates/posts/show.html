@@ -9,6 +9,6 @@
         ~{{ post.content| wordcount / 238 }} min read
     </span>
     <h1>{{ post.title }}</h1>
-    {{ post.content }}
+    {{ post.content|safe }}
 </div>
 {% endblock %}

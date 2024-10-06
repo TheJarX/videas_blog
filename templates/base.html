@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="/static/assets/styles.css">
 </head>
-<body class="flex flex-col">
+<body>
 <header>
     <div class="header__left">
         {% include "config/logo.html" %}
@@ -16,7 +16,7 @@
         {% include "config/header_links.html" %}
     </div>
 </header>
-<main class="flex flex-col">
+<main class="flex flex-row">
     {% block content %}{% endblock %}
 </main>
 <footer>
